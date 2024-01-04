@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome !</h1>
+        <div class="theme">
+            <img class="light-theme active-theme" src="images/sunny-outline.svg" alt="light">
+            <img class="dark-theme" src="images/moon-outline.svg" alt="dark">
+        </div>
+    </header>
+    <div class="container-main">
+        <h2>Sign Up</h2>
+        <form action="" method="post">
+            <input type="text" id="first_name" placeholder="First name" required>
+            <input type="text" id="last_name" placeholder="Last name" required>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="password" id="user_password" placeholder="Password" minlength="6" required>
+            <input type="password" id="user_confirmpassword" placeholder="Confirm Password" required>
+            <div class="agree">
+                <input type="checkbox" id="agree-term" name="agree-term" required>
+                <label for="agree-term">I Agree with <span>privacy</span> and <span>policy</span></label>
+            </div>
+            <button id="submit" type="submit">Sign up</button>
+        </form>
+
+        <div class="signup-alternative">
+            <a>Or Sign in with</a>
+            <img src="images/logo-google.svg" alt="google">
+            <img src="images/logo-instagram.svg" alt="instagram">
+            <img src="images/logo-github.svg" alt="github">
+        </div>
+        <div>Already hace an account? <span>Sign in</span></div>
+    </div>
+    <footer>Copyright © 2023 Lucas Carovano</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

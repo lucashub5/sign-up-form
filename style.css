@@ -1,0 +1,154 @@
+:root.dark {
+    --base-background: rgb(6, 6, 6);
+    --base-color: rgb(218, 218, 218);
+    --borders: 1px solid rgb(50, 50, 50);
+    --base-shadow: 0 0 10px rgba(241, 241, 241, 0.1);
+    --filter-img: invert(0.8);
+}
+
+:root.light {
+    --base-background: rgb(255, 255, 255);
+    --base-color: rgb(45, 53, 58);
+    --borders: 1px solid rgb(231, 231, 231);
+    --base-shadow: 0 0 10px rgba(34, 34, 34, 0.1);
+    --filter-img: invert(0.2);
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: url('NotoSansOsmanya-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--base-color);
+}
+
+body {
+    font-family: 'notosans';
+    font-size: 12px;
+    background: var(--base-background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.container-main {
+    width: 400px;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    border: var(--borders);
+    box-shadow: var(--base-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#first_name, #last_name {
+    width: 48%;
+}
+
+form input, form button {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border: var(--borders);
+    background: none;
+}
+
+form input {
+    padding-left: 10px;
+}
+
+form input:focus {
+    border: 1px solid rgb(24, 43, 63);
+    outline: none;
+}
+
+form button {
+    margin-top: 20px;
+    border: none;
+    background: rgb(106, 124, 140);
+    color: white;
+    font-weight: bold;
+}
+
+form button:hover {
+    outline: 1px solid black;
+}
+
+form button:active {
+   background: rgb(72, 79, 82);
+}
+
+.agree {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.agree input {
+    height: auto;
+}
+
+div label {
+    width: 3000px;
+}
+
+.signup-alternative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px
+}
+
+.signup-alternative img {
+    width: 25px;
+    filter: var(--filter-img);
+}
+
+div a {
+    font-weight: bold;
+}
+
+div span {
+    color:rgb(255, 8, 8);
+}
+
+.theme img {
+    width: 30px;
+}
+
+.theme img:hover {
+    width: 30px;
+    filter: invert(0.5);
+}
+
+.active-theme {
+    filter: invert(0.9);
+}
