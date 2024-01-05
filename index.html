@@ -21,7 +21,13 @@
             <input type="text" id="last_name" placeholder="Last name" required>
             <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="user_password" placeholder="Password" minlength="6" required>
+            <div class="eye-container" onclick="togglePasswordVisibility()">
+                <img src="images/eye-off-outline.svg" alt="show/hidden" id="eye-icon">
+            </div>
             <input type="password" id="user_confirmpassword" placeholder="Confirm Password" required>
+            <div class="eye-container" onclick="togglePasswordVisibility2()">
+                <img src="images/eye-off-outline.svg" alt="show/hidden" id="eye-icon2">
+            </div>
             <div class="agree">
                 <input type="checkbox" id="agree-term" name="agree-term" required>
                 <label for="agree-term">I Agree with <span>privacy</span> and <span>policy</span></label>

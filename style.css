@@ -45,7 +45,7 @@ header {
 
 .container-main {
     width: 400px;
-    height: 100%;
+    height: 500px;
     margin: 20px;
     border-radius: 10px;
     border: var(--borders);
@@ -150,6 +150,24 @@ div span {
     filter: invert(0.9);
 }
 
+.eye-container {
+    position: absolute;
+}
+
+#eye-icon, #eye-icon2 {
+    width: 18px;
+    filter: invert(0.5);
+    position: relative;
+    bottom: 29px;
+    left: 293px;
+}
+
+#eye-icon2 {
+    bottom: -12px;
+    left: 293px;
+}
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
 
@@ -168,6 +186,20 @@ form {
 
 #first_name, #last_name {
     width: 100%;
+}
+
+.eye-container {
+    right: 12.5%;
+}
+
+#eye-icon {
+    bottom: 8px;
+    left: 0;
+}
+
+#eye-icon2 {
+    bottom: 48px;
+    left: 0;
 }
 
 }
