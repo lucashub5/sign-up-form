@@ -1,6 +1,6 @@
 :root.dark {
     --base-background: rgb(6, 6, 6);
-    --base-color: rgb(218, 218, 218);
+    --base-color: rgb(185, 185, 185);
     --borders: 1px solid rgb(50, 50, 50);
     --base-shadow: 0 0 10px rgba(241, 241, 241, 0.1);
     --filter-img: invert(0.8);
@@ -108,15 +108,12 @@ form button:active {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: end;
 }
 
-.agree input {
-    height: auto;
-}
-
-div label {
-    width: 3000px;
+#agree-term {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .signup-alternative {
